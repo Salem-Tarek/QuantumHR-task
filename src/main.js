@@ -28,6 +28,7 @@ app.use(PrimeVue, {
     theme: {
         preset: Aura,
         options: {
+            darkModeSelector: 'none',
             // This ensures PrimeVue styles don't fight with Tailwind
             cssLayer: {
                 name: 'primevue',

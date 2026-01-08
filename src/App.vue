@@ -6,10 +6,10 @@
       <i class="pi pi-github text-3xl web:text-6xl"></i>
     </a>
   </div>
-  <div v-if="showLayout" class="flex flex-col h-screen bg-gray-100 dark:bg-gray-900">
+  <div v-if="showLayout" class="flex flex-col h-screen bg-gray-100">
     <Header />
     <div class="flex-1 flex flex-col overflow-hidden">
-      <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 dark:bg-gray-900">
+      <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100">
         <div class="container mx-auto web:px-6 py-8">
           <router-view :key="$route.fullPath" />
         </div>
