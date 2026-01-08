@@ -1,4 +1,5 @@
-# Deploy to GitHub Pages on push to main (update `branches` below if needed)
+# Deploy to GitHub Pages on push to dev (update `branches` below if needed)
+name: Deploy to GitHub Pages
 on:
   push:
     branches:
@@ -22,7 +23,7 @@ jobs:
           node-version: '22.15.1'
 
       - name: Install dependencies
-        run: npm i
+        run: npm ci
 
       - name: Build
         run: npm run build
@@ -33,7 +34,7 @@ jobs:
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./dist   # <-- update if your build output is in dist/ or another folder
+          path: ./dist   # <-- update if your build output is in a different folder
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
