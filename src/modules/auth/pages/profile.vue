@@ -18,6 +18,7 @@
             </GenericFormInput>
             <GenericFormInput
                 label="Phone"
+                type="number"
                 v-model="form.phone"
                 :disabled="!isEditing || isLoading"
                 class="mb-4"
