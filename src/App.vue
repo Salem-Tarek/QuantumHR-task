@@ -2,7 +2,7 @@
 <template>
   <Toast />
   <div class="fixed bottom-8 left-8 z-[999999]">
-    <a href="https://github.com/Salem-Tarek/QuantumHR-task" target="_blank">
+    <a href="https://github.com/Salem-Tarek/QuantumHR-task/tree/dev" target="_blank">
       <i class="pi pi-github text-3xl web:text-6xl"></i>
     </a>
   </div>
